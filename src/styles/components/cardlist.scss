@@ -1,0 +1,12 @@
+.cardlist {
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 340px 340px 340px;
+    gap: 40px;
+    background-color: #F6F6F6;
+    padding: 40px;
+    border-radius: 20px;
+  }
+}
