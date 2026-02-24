@@ -1,0 +1,51 @@
+@use "../abstracts/variables.scss";
+
+.colapse {
+    display: flex;
+    flex-direction: column;
+    width: 582px;
+
+    &__button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: variables.$secondary-color;
+        border: none;
+        padding: 15px;
+        border-radius: 5px;
+
+        &--annonce {
+            width: 582px;
+        }
+
+        &--a-propos {
+            width: 1023px;
+        }
+    }
+
+    &__title {
+        color: white;
+        font-size: 18px;
+    }
+
+    &__icon {
+        color: white;
+        font-size: 22px;
+        transition: transform 0.5s ease;
+
+        &--open {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__content {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 500ms ease
+    }
+
+    &--open &__content {
+        max-height: 200px;
+    }
+    
+}

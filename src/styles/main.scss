@@ -1,8 +1,15 @@
 @use "./base/reset.scss";
 @use "./base/base.scss";
+@use "./abstracts/variables.scss";
 @use "./components/cardlist.scss";
 @use "./components/card.scss";
+@use "./components/starrating.scss";
+@use "./components/carousel.scss";
+@use "./components/list";
+@use "./components/colapse";
 @use "./layout/header.scss";
 @use "./layout/container.scss";
 @use "./layout/footer.scss";
 @use "./pages/home.scss";
+@use "./pages/annonce.scss";
+@use "./pages/apropos";

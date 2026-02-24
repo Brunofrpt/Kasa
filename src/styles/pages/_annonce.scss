@@ -1,0 +1,65 @@
+@use "../abstracts/variables.scss";
+
+.annonce {
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        color: variables.$secondary-color;
+        font-size: 36px;
+        font-weight: 500;
+        margin-top: 40px;
+    }
+
+    &__location {
+        font-size: 18px;
+    }
+
+    &__aside {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 40px;
+    }
+
+    &__host {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__host-name {
+        max-width: 93px;
+        color: variables.$secondary-color;
+        text-align: right;
+    }
+
+    &__photo-hote {
+        width: 64px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 196px;
+    }
+
+    &__details {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    &__panel-description {
+        padding: 15px;
+        background-color: #f7f7f7;
+        border-radius: 15px;
+    }
+}

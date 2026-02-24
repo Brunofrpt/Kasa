@@ -1,0 +1,28 @@
+@use "../abstracts/variables.scss";
+
+.list {
+
+    &--tags {
+        display: flex;
+        gap: 10px;
+        margin-top: 40px;        
+    }
+
+    &__item--tags {
+        background-color: variables.$secondary-color;
+        color: white;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 4px 15px;
+        height: 25px;
+        
+    }
+
+    &--equipements {
+        padding: 15px;
+        background-color: #f7f7f7;
+        border-radius: 15px;
+    }
+}
+

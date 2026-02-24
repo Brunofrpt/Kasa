@@ -1,0 +1,50 @@
+.carousel {
+    height: 415px;
+    overflow: hidden;
+    border-radius: 25px;
+    position: relative;
+
+    &__image {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__button {
+        position: absolute;
+        color: white;
+
+        &--left {
+            top: 40%;
+            left: 20px;
+            z-index: 1;
+            background-color: transparent;
+            border: none;
+        }
+
+        &--right {
+            top: 40%;
+            right: 20px;
+            z-index: 1;
+            background-color: transparent;
+            border: none;
+        }
+    }
+
+    &__icon-left {
+        font-size: 90px;
+    }
+
+    &__icon-right {
+        font-size: 90px;
+    }
+
+    &__index {
+        position: absolute;
+        color: white;
+        bottom: 20px;
+        left: 50%;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
