@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home/index";
 import Annonce from "./pages/Annonce"
 import Apropos from "./pages/Apropos/index";
+import Error from "./pages/Error";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/annonce/:id" element={<Annonce />} />
         <Route path="/a-propos" element={<Apropos />} />
+        <Route path="/*" element={<Error />} />
       </Routes>
 
       <Footer />

@@ -5,7 +5,9 @@ import banner from "../../assets/image-source-2.png";
 function Apropos() {
     return (
         <main className="container a-propos">
-            <img className="a-propos__banner" src={banner} alt="banner Kasa"/>
+            <section className="a-propos__banner">
+                <img className="a-propos__banner-img" src={banner} alt="banner Kasa"/>
+            </section>
             <section className="fiabilite">
                 <Colapse title={"Fiabilité"} variant="a-propos">
                     <p className="annonce__panel-description" >Les annonces postées sur Kasa garantissent une fiabilité totale.

@@ -14,7 +14,7 @@ function Collapse ({title, children, variant = "default"}) {
                 <h2 className="colapse__title">{title}</h2>
                 <span className={isOpen ? "colapse__icon colapse__icon--open" : "colapse__icon"}><i className="fa-solid fa-angle-up"></i></span>
             </button>
-            <div className="colapse__content">{children}</div>
+            <div className={`colapse__content colapse__content--${variant}`}>{children}</div>
         </div>
     );
 

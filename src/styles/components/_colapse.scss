@@ -5,6 +5,7 @@
     flex-direction: column;
     width: 582px;
 
+
     &__button {
         display: flex;
         justify-content: space-between;
@@ -15,7 +16,8 @@
         border-radius: 5px;
 
         &--annonce {
-            width: 582px;
+            max-width: 582px;
+            width: 100%;
         }
 
         &--a-propos {
@@ -34,14 +36,18 @@
         transition: transform 0.5s ease;
 
         &--open {
-            transform: rotate(180deg);
+            transform: rotate(-180deg);
         }
     }
 
     &__content {
         overflow: hidden;
         max-height: 0;
-        transition: max-height 500ms ease
+        transition: max-height 500ms ease;
+
+        &--a-propos {
+            width: 1023px;
+        }
     }
 
     &--open &__content {
