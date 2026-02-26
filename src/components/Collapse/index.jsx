@@ -9,7 +9,7 @@ function Collapse ({title, children, variant = "default"}) {
     }
 
     return (
-        <div className={isOpen ? "colapse colapse--open" : "colapse"}>
+        <div className={`colapse colapse--${variant} ${isOpen ? "colapse--open" : ""}`}>
             <button type="button" className={`colapse__button colapse__button--${variant}`} onClick={toggle}>
                 <h2 className="colapse__title">{title}</h2>
                 <span className={isOpen ? "colapse__icon colapse__icon--open" : "colapse__icon"}><i className="fa-solid fa-angle-up"></i></span>

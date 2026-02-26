@@ -18,7 +18,7 @@ function Carousel({ pictures = [], title = "" }) {
     };
 
     return (
-        <section className=" container carousel">
+        <section className="carousel">
 
             <img className="carousel__image"
                 src={pictures[index]}

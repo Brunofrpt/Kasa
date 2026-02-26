@@ -14,10 +14,10 @@ function Annonce() {
     if (!logement) return <Navigate to="/404" replace />
 
     return (
-        <main className="main">
+        <main className=" container main">
             <article className="annonce">
                 <Carousel pictures={logement.pictures} title={logement.title} />
-                <section className="container annonce__top">
+                <section className="annonce__top">
                     <header className="annonce__description">
                         <h1 className="annonce__title">{logement.title}</h1>
                         <p className="annonce__location">{logement.location}</p>
@@ -33,13 +33,13 @@ function Annonce() {
                         </section>
                     </aside>
                 </section>
-                <section className=" container annonce__details">
+                <section className=" annonce__details">
                     <Collapse title={"Description"} variant="annonce">
                         <p className="annonce__panel-description">
                             {logement.description}
                         </p>
                     </Collapse>
-                    <Collapse title={"Équipements"}>
+                    <Collapse title={"Équipements"} variant="annonce">
                         <List items={logement.equipments} variant="equipements" />
                     </Collapse>
                 </section>

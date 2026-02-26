@@ -52,10 +52,20 @@
 
     &__details {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+        gap: 40px;
         margin-top: 40px;
         margin-bottom: 40px;
     }
+
+    &__details>.colapse {
+            flex: 1 1 0;
+            /* autorise à grandir ET rétrécir */
+            min-width: 320px;
+            /* ton seuil “stop shrink” */
+            max-width: 582px;
+            /* maximum maquette */
+        }
 
     &__panel-description {
         padding: 15px;
