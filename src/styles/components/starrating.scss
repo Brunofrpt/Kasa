@@ -14,3 +14,13 @@
         color: #FF6060;
     }
 }
+
+@media screen and (max-width: 375px) {
+
+    .star {
+
+        &__item {
+            font-size: 16px;
+        }
+    }
+}

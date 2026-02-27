@@ -53,6 +53,7 @@
         overflow: hidden;
         max-height: 0;
         transition: max-height 500ms ease;
+        width: 100%;
 
         &--a-propos {
             max-width: 1023px;
@@ -61,7 +62,39 @@
     }
 
     &--open &__content {
-        max-height: 200px;
+        max-height: 240px;
     }
     
+}
+
+@media screen and (max-width: 768px) {
+    .colapse {
+
+        &--annonce {
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+}
+
+    @media screen and (max-width: 375px) {
+
+        .colapse {
+
+        &__button {
+            height: 30px;
+        }
+
+        &__title {
+            font-size: 13px;
+        }
+
+        &__content {
+
+            &--open &__content {
+                max-height: 250px;
+            }
+        }
+    }
 }

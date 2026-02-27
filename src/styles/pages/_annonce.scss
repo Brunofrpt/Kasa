@@ -60,11 +60,8 @@
 
     &__details>.colapse {
             flex: 1 1 0;
-            /* autorise à grandir ET rétrécir */
             min-width: 320px;
-            /* ton seuil “stop shrink” */
             max-width: 582px;
-            /* maximum maquette */
         }
 
     &__panel-description {
@@ -72,4 +69,59 @@
         background-color: #f7f7f7;
         border-radius: 15px;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .annonce {
+
+        &__top {
+            flex-direction: column;
+        }
+
+        &__aside {
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        &__details {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__host-name {
+            font-size: 16px;
+        }
+
+        &__photo-hote {
+            width: 55px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px){
+    .annonce {
+        
+        &__title {
+            font-size: 18px;
+        }
+
+        &__location {
+            font-size: 14px;
+        }
+
+        &_rating {
+            justify-content: flex-start;
+        }
+
+        &__host-name {
+            font-size: 12px;
+        }
+
+        &__photo-hote {
+            width: 32px;
+        }
+    }
+    
 }
